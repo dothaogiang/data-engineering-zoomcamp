@@ -9,6 +9,6 @@ ENV PATH="/app/.venv/bin:$PATH"
 
 run uv sync --locked
 
-Copy pipeline.py .
+Copy ingest_data.py .
 
-Entrypoint ["uv", "run", "python", "pipeline.py"]
+Entrypoint ["uv", "run", "python", "ingest_data.py"]
